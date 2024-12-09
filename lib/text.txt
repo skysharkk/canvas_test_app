@@ -1,0 +1,13 @@
+ ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(
+              content: const Text('Количесвто линий должно быть четное!',
+                  style: TextStyle(fontSize: 16)),
+              backgroundColor: Colors.red,
+              dismissDirection: DismissDirection.up,
+              behavior: SnackBarBehavior.floating,
+              margin: EdgeInsets.only(
+                  bottom: MediaQuery.of(context).size.height - 150,
+                  left: 10,
+                  right: 10),
+            )
+          );
